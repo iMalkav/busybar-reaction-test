@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-11-05T13:53:52.088857+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.reaction_test",
+    "name": "Reaction Test",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Wait for the cue, then press OK to measure your reaction.",
+    "heap_size_kib": 256,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "attempts": 5,
+      "sound": false
+    }
+  },
+  "inputs": [],
+  "data_note": "Schema default settings.",
+  "fixture": null,
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "d7d7b1434af84081c8a24ea50f5cd4e8a8988b71007a8bd8fd3c276321b31bd6",
+      "png_sha256": "4dace54c605e11d00e1887fc04679ef12567a500826e50efb6317f2b0a0a2eb9"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "19bd0500a1291774d73698d8f47f6f5fca8e33b904178728ef8556e7af2b6605",
+      "png_sha256": "5fb9e78de2e4adbf9a173b99b3ac99001d969155c6b6005f107178e3101273c2"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
